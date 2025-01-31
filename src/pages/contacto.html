@@ -1,69 +1,108 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MikroMovilidad</title>
+    <title>Descubre Quito</title>
     <link rel="stylesheet" href="../css/contacto.css">
     <link href="https://fonts.googleapis.com/css2?family=Oooh+Baby&family=Inter:wght@400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-</head>
 
+</head>
 <body>
-    <header class="navbar">
-        <div class="logo-container">
-            <img class="logo" src="../img/logo.png" alt="Logo MikroMovilidad">
-        </div>
-        <nav class="menu">
-            <a href="index.html">Inicio</a>
-            <a href="nosotros.html">Nosotros</a>
-            <a href="servicios.html">Servicios</a>
-            <a href="beneficios.html">Beneficios</a>
-            <a href="tecnologia.html">Tecnología</a>
-            <a href="participa.html">Participa</a>
-            <a href="contacto.html">Contacto</a>
-            <input type="text" class="search-input" placeholder="Buscar...">
+    <header>
+        <nav>
+            <div><strong>Mikro moviLAB</strong></div>
+            <div>
+                <a href="index.html">Inicio</a>
+                <a href="nosotros.html">Nosotros</a>
+                <a href="servicios.html">Servicios</a>
+                <a href="beneficios.html">Beneficios</a>
+                <a href="tecnologia.html">Tecnología</a>
+                <a href="participa.html">Participa</a>
+                <a href="contacto.html">Contacto</a>
+            </div>
         </nav>
-    </header>  
-    <main>      
-        <div class="banner">
-            <img src="../img/banner-contacto.png" alt="Banner" class="banner-image">
-            <div class="banner-text">“Descubre Quito sobre dos ruedas"</div>
+    </header>
+
+    <section class="hero">
+        Descubre Quito sobre dos ruedas
+    </section>
+
+    <section class="main-content">
+        <div class="contact-card">
+            <img src="../img/ciclista.png" alt="Ilustración de usuario">
+            <p>En Mikro moviLAB creemos que moverte por la ciudad debe ser dinámico, ecológico y accesible. ¡Planifica tu próximo viaje con nosotros!</p>
+            <p><strong>Enrique Segoblano</strong></p>
+            <p>Email: <a href="mailto:info@mikromovilab.com">info@mikromovilab.com</a></p>
+            <p>Teléfono: 82-556454 ext: 245</p>
         </div>
-        
-            <footer class="footer">
-                <div class="footer-title">
-                    <h2><span>Mikro</span><span>moviLAB</span></h2>
-                    <p>Movilidad sustentable para Quito</p>
+
+        <div class="contact-form">
+            <h3>Llena nuestro formulario y te contactaremos pronto.</h3>
+            <form>
+                <input type="text" name="nombre" placeholder="Nombre" required>
+                <input type="email" name="email" placeholder="Correo electrónico" required>
+                <input type="tel" name="telefono" placeholder="Teléfono" required>
+                <textarea name="mensaje" rows="4" placeholder="Escribe tu mensaje" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-title">
+            <h2><span>Mikro</span><span>moviLAB</span></h2>
+            <p>Movilidad sustentable para Quito</p>
+        </div>
+        <div class="footer-content">
+            <div class="footer-left">
+                <a href="servicios.html">
+                    <h3>Servicios</h3>
+                </a>
+                <a href="nosotros.html">
+                    <h3>Nosotros</h3>
+                </a>              
+                <a href="tecnologia.html">
+                    <h3>Tecnología</h3>
+                </a>            </div>
+            <div class="footer-center">
+                <h3>¿Necesitas ayuda?</h3>
+                <hr>
+                <div class="faq">
+                    <h4>Preguntas Frecuentes</h4>
                 </div>
-                <div class="footer-content">
-                    <div class="footer-left">
-                        <h3>Servicios</h3>
-                        <h3>Nosotros</h3>
-                        <h3>Tecnología</h3>
-                    </div>
-                    <div class="footer-center">
-                        <h3>¿Necesitas ayuda?</h3>
-                        <hr>
-                        <div class="faq">
-                            <h4>Preguntas Frecuentes</h4>
-                        </div>
-                    </div>
-                    <div class="footer-right">
-                        <h3>Contáctanos</h3>
-                        <hr>
-                        <p>Info@mikromovilab.com</p>
-                        <p>02-5565445 ext:245</p>
-                    </div>
-                </div>
-                <div class="footer-icons">
-                    <img src="../img/icons/fot-izq.png" alt="Icono izquierdo" class="footer-icon-left">
-                    <img src="../img/icons/fot-line.png" class="footer-icon-center">
-                    <img src="../img/icons/fot-der.png" alt="Icono derecho" class="footer-icon-right">
-                </div>
-            </footer>
-    </main>
+            </div>
+            <div class="footer-right">
+                <h3>Contáctanos</h3>
+                <hr>
+                <p>Info@mikromovilab.com</p>
+                <p>02-5565445 ext:245</p>
+            </div>
+        </div>
+        <div class="footer-icons">
+            <img src="../img/icons/fot-izq.png" alt="Icono izquierdo" class="footer-icon-left">
+            <img src="../img/icons/fot-line.png" class="footer-icon-center">
+            <img src="../img/icons/fot-der.png" alt="Icono derecho" class="footer-icon-right">
+        </div>
+    </footer>
+  <!-- Modal de confirmación -->
+<div id="modalConfirmacion" class="modal">
+    <div class="modal-content">
+        <h3>¿Seguro que quieres enviar el formulario?</h3>
+        <div class="modal-buttons">
+            <button id="confirmarEnvio" class="btn-confirmar">Aceptar</button>
+            <button id="cancelarEnvio" class="btn-cancelar">Cancelar</button>
+        </div>
+    </div>
+</div>
+
+<!-- Mensaje de éxito -->
+<div id="mensajeExito" class="mensaje-exito">
+    <p>✅ Mensaje enviado con éxito</p>
+</div>
+</main>
+<script src="../js/contacto.js"></script>
 </body>
 
 </html>

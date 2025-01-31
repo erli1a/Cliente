@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,7 +8,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Oooh+Baby&family=Inter:wght@400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-
 <body>
     <header class="navbar">
         <div class="logo-container">
@@ -26,6 +24,7 @@
             <input type="text" class="search-input" placeholder="Buscar...">
         </nav>
     </header>  
+
     <main>      
         <div class="banner">
             <div class="banner-image-container">
@@ -33,46 +32,111 @@
             </div>
             <div class="banner-text-container">
                 <div class="banner-text">
-                    <p>bicicleta es una de las mejores opciones
-                        para el transporte y la actividad física por                        
-                        diversas razones conocelas aqui</p>                    
+                    <p>La bicicleta es una de las mejores opciones para el transporte y la actividad física. Conócela aquí.</p>
                 </div>
             </div>
         </div>
+        <section class="tarjetas">
+            <h2>Alquila tu Bicicleta</h2>
+            <div class="card-container">
+                <div class="card">
+                    <img src="../img/bicicleta urbana.jpeg" alt="Bicicleta modelo 1">
+                    <div class="card-body">
+                        <h3>Bicicleta Urbana</h3>
+                        <p>Ideal para recorridos cortos por la ciudad, cómoda y rápida.</p>
+                        <button class="btn" onclick="openModal('modal1')">Información</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="../img/montaña.jpeg" alt="Bicicleta modelo 2">
+                    <div class="card-body">
+                        <h3>Bicicleta de Montaña</h3>
+                        <p>Perfecta para aventuras fuera de la ciudad. Robusta y resistente.</p>
+                        <button class="btn" onclick="openModal('modal2')">Información</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="../img/electrica.jpeg" alt="Bicicleta modelo 3">
+                    <div class="card-body">
+                        <h3>Bicicleta Eléctrica</h3>
+                        <p>Comodidad y velocidad sin esfuerzo. Ideal para distancias largas.</p>
+                        <button class="btn" onclick="openModal('modal3')">Información</button>
+                    </div>
+                </div>
+            </div>
+        </section>
         
-        
-            <footer class="footer">
-                <div class="footer-title">
-                    <h2><span>Mikro</span><span>moviLAB</span></h2>
-                    <p>Movilidad sustentable para Quito</p>
-                </div>
-                <div class="footer-content">
-                    <div class="footer-left">
-                        <h3>Servicios</h3>
-                        <h3>Nosotros</h3>
-                        <h3>Tecnología</h3>
-                    </div>
-                    <div class="footer-center">
-                        <h3>¿Necesitas ayuda?</h3>
-                        <hr>
-                        <div class="faq">
-                            <h4>Preguntas Frecuentes</h4>
-                        </div>
-                    </div>
-                    <div class="footer-right">
-                        <h3>Contáctanos</h3>
-                        <hr>
-                        <p>Info@mikromovilab.com</p>
-                        <p>02-5565445 ext:245</p>
-                    </div>
-                </div>
-                <div class="footer-icons">
-                    <img src="../img/icons/fot-izq.png" alt="Icono izquierdo" class="footer-icon-left">
-                    <img src="../img/icons/fot-line.png" class="footer-icon-center">
-                    <img src="../img/icons/fot-der.png" alt="Icono derecho" class="footer-icon-right">
-                </div>
-            </footer>
-    </main>
-</body>
+       <!-- Modal para Bicicleta Urbana -->
+<div id="modal1" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('modal1')">&times;</span>
+        <h2>Bicicleta Urbana</h2>
+        <p>La bicicleta urbana está diseñada para la comodidad y la rapidez en recorridos urbanos. Con un diseño práctico, permite viajes más cortos sin esfuerzos.</p>
+        <button class="btn-close" onclick="closeModal('modal1')">Cerrar</button> <!-- Botón de cerrar dentro del modal -->
+    </div>
+</div>
 
+<!-- Modal para Bicicleta de Montaña -->
+<div id="modal2" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('modal2')">&times;</span>
+        <h2>Bicicleta de Montaña</h2>
+        <p>Perfecta para explorar fuera de la ciudad, esta bicicleta está construida para soportar terrenos irregulares con su marco resistente y neumáticos robustos.</p>
+        <button class="btn-close" onclick="closeModal('modal2')">Cerrar</button> <!-- Botón de cerrar dentro del modal -->
+    </div>
+</div>
+
+<!-- Modal para Bicicleta Eléctrica -->
+<div id="modal3" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('modal3')">&times;</span>
+        <h2>Bicicleta Eléctrica</h2>
+        <p>La bicicleta eléctrica es ideal para quienes buscan comodidad y velocidad. Es perfecta para largos trayectos sin esfuerzo físico adicional.</p>
+        <button class="btn-close" onclick="closeModal('modal3')">Cerrar</button> <!-- Botón de cerrar dentro del modal -->
+    </div>
+</div>
+
+
+        <footer class="footer">
+            <div class="footer-title">
+                <h2><span>Mikro</span><span>moviLAB</span></h2>
+                <p>Movilidad sustentable para Quito</p>
+            </div>
+            <div class="footer-content">
+                <div class="footer-left">
+                    <a href="servicios.html">
+                        <h3>Servicios</h3>
+                    </a>
+                    <a href="nosotros.html">
+                        <h3>Nosotros</h3>
+                    </a>              
+                    <a href="tecnologia.html">
+                        <h3>Tecnología</h3>
+                    </a>            </div>
+                
+                <div class="footer-center">
+                    <h3>¿Necesitas ayuda?</h3>
+                    <hr>
+                    <div class="faq">
+                        <h4>Preguntas Frecuentes</h4>
+                    </div>
+                </div>
+                <div class="footer-right">
+                    <a href="contacto.html">
+                        <h3>contactanos</h3></a> 
+                    <hr>
+                    <p>Info@mikromovilab.com</p>
+                    <p>02-5565445 ext:245</p>
+                </div>
+            </div>
+            <div class="footer-icons">
+                <img src="../img/icons/fot-izq.png" alt="Icono izquierdo" class="footer-icon-left">
+                <img src="../img/icons/fot-line.png" class="footer-icon-center">
+                <img src="../img/icons/fot-der.png" alt="Icono derecho" class="footer-icon-right">
+            </div>
+        </footer>
+    </main>
+
+    <script src="../js/beneficios.js"></script>
+</body>
 </html>
