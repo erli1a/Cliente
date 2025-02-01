@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MikroMovilidad - Registro Empresa</title>
+    <link rel="stylesheet" href="../css/business-form.css">
+    <link href="https://fonts.googleapis.com/css2?family=Oooh+Baby&family=Inter:wght@400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <header class="navbar">
+        <div class="logo-container">
+            <img class="logo" src="../img/logo.png" alt="Logo MikroMovilidad">
+        </div>
+        <nav class="menu">
+            <a href="index.html">Inicio</a>
+            <a href="nosotros.html">Nosotros</a>
+            <a href="servicios.html">Servicios</a>
+            <a href="beneficios.html">Beneficios</a>
+            <a href="tecnologia.html">Tecnología</a>
+            <a href="participa.html">Participa</a>
+            <a href="contacto.html">Contacto</a>
+            <input type="text" class="search-input" placeholder="Buscar...">
+        </nav>
+    </header>
+
+    <main>
+        <div class="banner">
+            <img src="../img/banner-participa.png" alt="Banner" class="banner-image">
+            <div class="banner-text">"Únete a la comunidad de MikromoviLaB"</div>
+        </div>
+
+        <div class="register-container">
+            <div class="register-form">
+                <div>
+                    <img src="../img/icons/logo-entidad.png" class="register-logo" alt="">                    
+                </div>                
+                <form action="#" method="POST">
+                    <div class="form-group">
+                        <label for="entity-name" class="input-icon">
+                            <i class="fas fa-building"></i>
+                        </label>
+                        <input type="text" id="entity-name" name="entity-name" placeholder="Nombre de la entidad" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="tipo-entidad">Tipo de Entidad</label>
+                        <div class="radio-group">
+                            <input type="radio" id="municipalidad" name="cargo" value="municipalidad">
+                            <label for="municipalidad">Municipalidad</label>
+                    
+                            <input type="radio" id="gobierno" name="cargo" value="gobierno">
+                            <label for="gobierno">Gobierno</label>
+                    
+                            <input type="radio" id="estatal" name="cargo" value="estatal">
+                            <label for="estatal">Estatal</label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="location" class="input-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </label>
+                        <input type="text" id="location" name="location" placeholder="Ubicación" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="contact-email" class="input-icon">
+                            <i class="fas fa-envelope"></i>
+                        </label>
+                        <input type="email" id="contact-email" name="contact-email" placeholder="Correo de contacto" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone" class="input-icon">
+                            <i class="fas fa-phone-alt"></i>
+                        </label>
+                        <input type="tel" id="phone" name="phone" placeholder="Número de teléfono" required>
+                    </div>              
+                    <div class="form-group remember-me">
+                        <input type="checkbox" id="remember" name="remember">
+                        <label for="remember">Recuérdame</label>
+                    </div>
+                    <button type="submit" class="submit-button">Crear cuenta</button>
+                    <p class="already-account">¿Ya tienes una cuenta? <a href="login.html">Ingresa</a></p>
+                </form>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <div class="footer-title">
+                <h2><span>Mikro</span><span>moviLAB</span></h2>
+                <p>Movilidad sustentable para Quito</p>
+            </div>
+            <div class="footer-content">
+                <div class="footer-left">
+                    <h3>Servicios</h3>
+                    <h3>Nosotros</h3>
+                    <h3>Tecnología</h3>
+                </div>
+                <div class="footer-center">
+                    <h3>¿Necesitas ayuda?</h3>
+                    <hr>
+                    <div class="faq">
+                        <h4>Preguntas Frecuentes</h4>
+                    </div>
+                </div>
+                <div class="footer-right">
+                    <h3>Contáctanos</h3>
+                    <hr>
+                    <p>Info@mikromovilab.com</p>
+                    <p>02-5565445 ext:245</p>
+                </div>
+            </div>
+            <div class="footer-icons">
+                <img src="../img/icons/fot-izq.png" alt="Icono izquierdo" class="footer-icon-left">
+                <img src="../img/icons/fot-line.png" class="footer-icon-center">
+                <img src="../img/icons/fot-der.png" alt="Icono derecho" class="footer-icon-right">
+            </div>
+        </footer>
+    </main>
+</body>
+
+</html>

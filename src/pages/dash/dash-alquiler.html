@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MikroMovilidad</title>
+    <link rel="stylesheet" href="../../css/dash/dash-alquiler.css">
+    <link href="https://fonts.googleapis.com/css2?family=Oooh+Baby&family=Inter:wght@400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <header class="navbar">
+        <div class="logo-container">
+            <img class="logo" src="../../img/logo.png" alt="Logo MikroMovilidad">
+        </div>
+        <nav class="menu">
+            <div>
+                <a href="dash-main.html">Home</a>
+                <a href="dash-alquiler.html">Alquiler</a>
+                <a href="dash-historial.html">Historial</a>
+            </div>
+            <div>
+                <i class="fas fa-bell"></i>
+                <i class="fas fa-user"></i>
+                <h5>Juan Perez</h5>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <!-- Título de bienvenida -->
+        <div class="welcome-title">
+          <h1>Completa tu alquiler</h1>
+        </div>
+      
+        <!-- Título de selección -->
+        <h2 class="step-title">1. Selecciona tu bicicleta</h2>
+      
+        <!-- Opciones de bicicleta -->
+        <div class="bike-options">
+            <button class="option public-bike">
+              <span>Bicicleta</span> <span>Pública</span>
+            </button>
+            <button class="option hotel-bike">
+              <span>Bike</span> <span>Hotel</span>
+            </button>
+            <button class="option business-bike">
+              <span>Bike</span> <span>Business</span>
+            </button>
+            <button class="option bus-bike">
+              <span>Bike</span> <span>Bus</span>
+            </button>
+          </div>
+          
+      
+        <!-- Contenido principal -->
+        <div class="main-content">
+          <!-- Izquierda: Opciones de pago -->
+          <div class="payment-options">
+            <!-- Opción: Tarjeta de crédito -->
+            <div class="payment-card">
+              <img src="../../img/targeta.png" alt="">
+              <h3>Tarjeta de crédito</h3>
+              <p>Selecciona</p>
+              <div class="card-logos">
+                <img src="../../img/icons/MasterCard.png" alt="Mastercard">
+                <img src="../../img/icons/Visa.png" alt="Visa">
+                <img src="../../img/icons/Cirrus.png" alt="Cirrus">
+                <img src="../../img/icons/Mercado Pago.png" alt="Mercado">
+              </div>
+            </div>
+      
+            <!-- Opción: Google Pay -->
+            <div class="payment-card">
+                <img src="../../img/google.png" alt="">
+              <h3>Google Pay</h3>
+              <p>Selecciona</p>
+              <div class="card-logos">
+                <img src="../../img/icons/Discover.png" alt="Discover">
+                <img src="../../img/icons/Sequra.png" alt="Sequra">
+                <img src="../../img/icons/Atome.png" alt="Atome">
+                <img src="../../img/icons/Version=Logo.jpg" alt="Mastercard2">
+              </div>
+            </div>
+      
+            <!-- Opción: PayPal -->
+            <div class="payment-card">
+                <img src="../../img/paypal.png" alt="">
+              <h3>PayPal</h3>
+              <p>Selecciona</p>
+              <div class="card-logos">
+                <img src="../../img/icons/MasterCard.png" alt="Mastercard">
+                <img src="../../img/icons/Paypal.jpg" alt="Paypal">
+              </div>
+            </div>
+          </div>
+      
+          <!-- Derecha: Formulario de tarjeta de crédito -->
+          <div class="credit-card-form">
+            <form>
+              <div class="form-group">
+                <label for="card-number">N° de tarjeta</label>
+                <input type="text" id="card-number" placeholder="XXXX XXXX XXXX XXXX">
+              </div>
+              <div class="form-group">
+                <label for="expiry-date">MM / AA</label>
+                <input type="text" id="expiry-date" placeholder="MM / AA">
+              </div>
+              <div class="form-group">
+                <label for="cvc">CVC</label>
+                <input type="text" id="cvc" placeholder="CVC">
+              </div>
+              <div class="form-group">
+                <label for="cardholder">Titular de la tarjeta</label>
+                <input type="text" id="cardholder" placeholder="Nombre completo">
+              </div>
+              <div class="form-group">
+                <label for="billing-address">Dirección de facturación</label>
+                <input type="text" id="billing-address" placeholder="Línea 1 de la dirección">
+              </div>
+              <div class="form-group">
+                <label for="postal-code">Código Postal</label>
+                <input type="text" id="postal-code" placeholder="Código Postal">
+              </div>
+              <button type="submit" class="pay-button">Pagar y desbloquear bicicleta</button>
+            </form>
+          </div>
+        </div>
+      </main>
+      
+   
+      
+</body>
+
+</html>
