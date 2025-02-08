@@ -383,3 +383,20 @@ transition: color 0.3s ease; /* Suavidad al pasar el mouse */
 .footer-content a h3:hover {
 color: #00aaff; /* Cambia el color al pasar el cursor (opcional) */
 }
+.tarjetas-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;  /* Espaciado entre tarjetas */
+}
+
+.tarjeta {
+  width: 30%;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+  .tarjeta {
+      width: 100%;
+  }
+}
